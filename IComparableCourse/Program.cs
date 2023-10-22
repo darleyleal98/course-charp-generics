@@ -27,8 +27,8 @@ namespace GenercisCourse
 
                 Console.WriteLine("Most Expensive: ");
                 CalculationService calculationService = new CalculationService();
-                
-                Product product = calculationService.
+
+                Product product = calculationService.MaxValue(listProducts);
             }
             catch (Exception exception)
             {
