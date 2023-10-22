@@ -25,10 +25,11 @@ namespace GenercisCourse
                     listProducts.Add(new Product(nameProduct, valueProduct));
                 }
 
-                Console.WriteLine("Most Expensive: ");
                 CalculationService calculationService = new CalculationService();
 
                 Product product = calculationService.MaxValue(listProducts);
+                Console.WriteLine("Most Expensive: ");
+                Console.WriteLine(product.ToString());
             }
             catch (Exception exception)
             {
